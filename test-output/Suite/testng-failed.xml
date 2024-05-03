@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Framework_Tutorial.testComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="error Message Testing(failed)">
+    <classes>
+      <class name="Framework_Tutorial.errorMessageTest">
+        <methods>
+          <include name="launchDriver"/>
+          <include name="submitOrder"/>
+        </methods>
+      </class> <!-- Framework_Tutorial.errorMessageTest -->
+    </classes>
+  </test> <!-- error Message Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->
